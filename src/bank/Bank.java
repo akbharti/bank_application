@@ -1,7 +1,16 @@
-
+/**
+ * This code will show the working of bank
+ */
 package bank;
 import java.util.Scanner;
-
+/**
+ * Declaring the balance,id and name of the person
+ * string as name
+ * integer type account no i.e.id
+ * balance in this case is a integer we can make it to accept floating number or
+ * double numbers
+ * @author rohit
+ */
 public class Bank {
 static Scanner input = new Scanner(System.in);
 private static int id, balance;
@@ -11,11 +20,20 @@ Bank.name = name;
 Bank.id = id;
 Bank.balance = balance;
 }
+/**
+ * This methods gives the information of a person in a particular bank holding 
+ * an account 
+ */
 void display() {
 System.out.println("Name:" + name);
 System.out.println("Account id:" + id);
 System.out.println("Balance:" + balance);
 }
+/**
+ * Main gives the all possible choices for a costumer to choose
+ * @param args initial declaration
+ * Uses Scanner for user to input their choice
+ */
 public static void main(String args[]){
 System.out.println("Enter your name: ");
 String nam = input.nextLine();
@@ -57,3 +75,7 @@ break;
 while(!quit);
 }
 }
+/**
+ * This program code work,s only for a single user 
+ * and conatins no option for transfer
+ */
