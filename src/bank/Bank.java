@@ -13,13 +13,19 @@ import java.util.Scanner;
  */
 public class Bank {
 static Scanner input = new Scanner(System.in);
-private static int id, balance;
+public static int id, balance;
 private static String name;
 Bank(String name, int id, int balance) {
-Bank.name = name;
-Bank.id = id;
-Bank.balance = balance;
+this.name = name;
+this.id = id;
+this.balance = balance;
 }
+
+    public Bank() {
+        System.out.println("hello!");
+    }
+
+   
 /**
  * This methods gives the information of a person in a particular bank holding 
  * an account 
